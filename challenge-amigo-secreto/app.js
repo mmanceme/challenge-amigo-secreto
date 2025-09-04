@@ -3,15 +3,15 @@
 
     // Función para agregar un amigo
     function agregarAmigo() {
-      const input = document.getElementById("amigo");
-      const nombre = input.value.trim();
+      let input = document.getElementById("amigo");
+      let nombre = input.value.trim();
 
       if (nombre) {
         amigos.push(nombre);
 
         // Mostrar en la lista
-        const lista = document.getElementById("listaAmigos");
-        const nuevoElemento = document.createElement("li");
+        let lista = document.getElementById("listaAmigos");
+        let nuevoElemento = document.createElement("li");
         nuevoElemento.textContent = nombre;
         lista.appendChild(nuevoElemento);
 
